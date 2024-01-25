@@ -1,0 +1,9 @@
+/*!
+ * One Page
+ *
+ * Gainlab 1.0.4
+ */
+var GainlabOnePage=(function($){"use strict";return{init:function(){var menuMarkup,rowName,anchor,extensionPrefix="wvc-",scrollLinkClass="scroll";if(GainlabParams.isWolfCore){extensionPrefix="wolf-core-";}
+if(GainlabParams.fullPageAnimation){scrollLinkClass=extensionPrefix+"-fp-nav";}
+menuMarkup="";if($("."+extensionPrefix+"parent-row").length){$("ul.nav-menu").hide();menuMarkup+="<ul class='nav-menu'>";$("."+extensionPrefix+"parent-row").each(function(){if($(this).data("row-name")&&!$(this).hasClass("not-one-page-section")){rowName=$(this).data("row-name");anchor=rowName.replace(" ","-").toLowerCase();menuMarkup+="<li class='menu-item menu-item-type-custom menu-item-object-custom'>";menuMarkup+="<a href='#"+anchor+"' class='menu-link "+scrollLinkClass+"'>";menuMarkup+="<span class='menu-item-inner'>";menuMarkup+="<span class='menu-item-text-container' data-text='"+rowName+"' itemprop='name'>";menuMarkup+=rowName;menuMarkup+="</span>";menuMarkup+="</span>";menuMarkup+="</a>";menuMarkup+="</li>";}});menuMarkup+="</ul>";$("#desktop-navigation").find(".menu-container").append(menuMarkup).addClass('menu-one-page-menu-container');if($("#mobile-menu-panel-inner #mobile-menu-container > div").length){$("#mobile-menu-panel-inner #mobile-menu-container > div").empty();$("#mobile-menu-panel-inner #mobile-menu-container > div").append(menuMarkup).addClass('menu-one-page-menu-container');}else{console.log('no mobile menu')}
+$("#desktop-navigation").find("ul.nav-menu").addClass("nav-menu-desktop").attr("id","site-navigation-primary-desktop").fadeIn();$("#mobile-menu-panel-inner").find("ul.nav-menu").addClass("nav-menu-mobile").attr("id","site-navigation-primary-mobile").fadeIn();$(window).bind("gainlab_one_page_menu_loaded");}}};})(jQuery);(function($){"use strict";$(document).ready(function(){GainlabOnePage.init();});})(jQuery);
