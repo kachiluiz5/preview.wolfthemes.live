@@ -4056,8 +4056,9 @@
 											</div>
 										</div>
 									</div>
-                                   <!-- FOOTER SECTION -->
+                                   <!-- FOOTER SECTION STARTS-->
 								   <?php include("../include/footer.php"); ?>
+								   <!-- FOOTER SECTION ENDS -->
 								</div>
 							</section>
 							<section

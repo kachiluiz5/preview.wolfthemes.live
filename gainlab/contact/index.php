@@ -1,5 +1,3 @@
-<?php include("process_form.php"); ?>
-
 <!DOCTYPE html>
 <html lang="en-US" itemscope itemtype="http://schema.org/WebPage">
 
@@ -1627,6 +1625,10 @@
 </head>
 
 <body class="page-template-default page page-id-25 theme-gainlab wolf-playlist-manager gainlab woocommerce-no-js wolf not-edge page-title-contact-us loading-animation-type-none site-layout-wide button-style-square global-skin-light skin-light wolf-core-yes menu-layout-top-right menu-style-semi-transparent-white menu-skin-light menu-width-wide mega-menu-width-fullwidth menu-hover-style- menu-sticky-soft submenu-bg-light accent-color-dark accent-color-is-black menu-items-visibility- side-panel-position-right side-panel-bg-light no-hero hero-font-light body-font-space-grotesk heading-font-bebas-neue menu-font-space-grotesk submenu-font-default transition-animation-type- has-text-logo logo-visibility-always has-wvc hero-layout-none post-is-title-text post-is-hero footer-type-hidden footer-skin-dark footer-widgets-layout-none footer-layout-boxed bottom-bar-layout-centered bottom-bar-visible has-404-plugin desktop desktop-screen wolf-core-body wolf-core-layout wolf-core-elementor wolf-core-elementor-page wolf-core-1-8-2 wolf-core-is-desktop wolf-core-not-edge wolf-core-not-firefox elementor-default elementor-kit-4 elementor-page elementor-page-25" data-hero-font-tone="light" data-post-id="25">
+	<!-- FOOTER SECTION STARTS-->
+	<?php include("../include/footer.php"); ?>
+	<!-- FOOTER SECTION ENDS -->
+
 	<div id="offcanvas"></div>
 	<div id="mobile-menu-panel" class="panel-font-dark" data-lenis-prevent> <a href="#" id="close-mobile-menu-icon" class="close-panel-button toggle-mobile-menu">X</a>
 		<div id="mobile-menu-panel-inner" data-lenis-prevent>
@@ -1882,7 +1884,7 @@
 																					<p role="status" aria-live="polite" aria-atomic="true"></p>
 																					<ul></ul>
 																				</div>
-																				<form action="https://preview.wolfthemes.live/gainlab/contact/#wpcf7-f2222-p25-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+																				<form action="process_form.php" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
 																					<div style="display: none;"> <input type="hidden" name="_wpcf7" value="2222" /> <input type="hidden" name="_wpcf7_version" value="5.8.5" /> <input type="hidden" name="_wpcf7_locale" value="en_US" /> <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f2222-p25-o1" /> <input type="hidden" name="_wpcf7_container_post" value="25" /> <input type="hidden" name="_wpcf7_posted_data_hash" value="" /></div>
 																					<div class="wpcf7-inline-wrapper">
 																						<p class="wpcf7-inline-field"><span class="wpcf7-form-control-wrap" data-name="your-firstname"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" value="" type="text" name="your-firstname" /></span></p>
